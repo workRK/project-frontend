@@ -25,8 +25,8 @@
             <th class="header-cell">Level</th>
             <th class="header-cell">Birthday</th>
             <th class="header-cell">Banned</th>
-            <th class="header-cell">Edit</th>
-            <th class="header-cell">Delete</th>
+            <th class="header-cell cell-small">Edit</th>
+            <th class="header-cell cell-small">Delete</th>
         </tr>
     </thead>
     <tbody class="players-table-body">
@@ -37,6 +37,41 @@
 <div class="pagination-wrapper">
     <span>Pages:</span>
     <span class="pagination-buttons"></span>
+</div>
+
+<div class="field" id="field">
+    <h2>Create new account:</h2>
+    <div class="create-field">
+        <label for="create-name-input">Name:</label>
+        <input class="input" id="create-name-input" type="text" data-create-name/>
+    </div>
+    <div class="create-field">
+        <label for="create-title-input">Title:</label>
+        <input class="input" id="create-title-input" type="text" data-create-title/>
+    </div>
+    <div class="create-field">
+        <label for="create-race-select">Race:</label>
+        <select id="create-race-select" data-create-race></select>
+    </div>
+    <div class="create-field">
+        <label for="create-profession-select">Profession:</label>
+        <select id="create-profession-select" data-create-profession></select>
+    </div>
+    <div class="create-field">
+        <label for="create-level-input">Level:</label>
+        <input class="input" id="create-level-input" type="text" data-create-level>
+    </div>
+    <div class="create-field">
+        <label for="create-birthday-input">Birthday:</label>
+        <input class="input" id="create-birthday-input" type="date" data-create-birthday>
+    </div>
+    <div class="create-field">
+        <label for="create-banned-select">Banned:</label>
+        <input class="input" id="create-banned-select" type="checkbox" data-create-banned></input>
+    </div>
+
+    <button class="save-button" onclick="createAccount()">Create</button>
+
 </div>
 
 </body>
